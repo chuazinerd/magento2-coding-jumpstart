@@ -1,0 +1,6 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Chuazinerd\CodingJumpstart\ViewModel\WelcomeMessage $welcomeMessageViewModel */
+$welcomeMessageViewModel = $block->getData('welcome_message_view_model');
+?>
+<h1><?= $welcomeMessageViewModel->getWelcomeMessage() ?></h1>
