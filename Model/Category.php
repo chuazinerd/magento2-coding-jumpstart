@@ -6,14 +6,12 @@ namespace Chuazinerd\CodingJumpstart\Model;
 
 use Chuazinerd\CodingJumpstart\Api\CategoryInterface;
 
-class Product
-{
-    function __construct (
-        private CategoryInterface $category,
-    ) {}
 
-    function getCategoryName() : string
+class Category implements CategoryInterface
+{
+
+    public function getName(): string
     {
-        return $this->category->getName();
+        return 'Category Name';
     }
 }
